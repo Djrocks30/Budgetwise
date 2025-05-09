@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4fdf7;
+  padding-top: 80px;
+}
+
+header {
+  background-color: #145A32;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  background-color: #0E4D2C;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #1e8449;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-form {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+
+.income-form {
+  background-color: #e8f5e9;
+}
+
+.expense-form {
+  background-color: #ffebee;
+}
+
+.bill-form {
+  background-color: #fff8e1;
+}
+
+.transaction-form h2 {
+  color: #145A32;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e8449;
+}
+
+.clear-bills-button {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.clear-bills-button:hover {
+  background-color: #c0392b;
+}
+
+
+.transaction-summary,
+.bill-summary {
+  margin-top: 20px;
+}
+
+.transaction-item,
+.bill-item {
+  padding: 10px;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+

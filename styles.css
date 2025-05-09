@@ -1,0 +1,112 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling for Login Form */
+.container {
+    background-color: #145A32; /* Dark Green for container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header Styling */
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Form Toggle Button Styling */
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Active form toggle button */
+.form-toggle button.active {
+    background-color: #A9DFBF; /* Light Green */
+    color: #145A32; /* Dark Green */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background-color: #27ae60; /* Light Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Submit Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #1e8449; /* Darker Green on hover */
+}
+
+/* Form Active State */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.form-group input:focus {
+    border-color: #145A32; /* Dark Green */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

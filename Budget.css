@@ -1,0 +1,147 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d4edda; /* Light green background color */
+}
+header {
+    background-color: #145A32;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    border: none
+}
+nav {
+    background-color: #145A32; 
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+    display: inline-block;
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #A9DFBF; /* Slightly darker green */
+    transform: scale(1.05);
+}
+nav ul li a.active {
+    font-weight: bolder;
+    color: #A9DFBF;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+form input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #57eba6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-section p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.hidden-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+canvas {
+max-width: 100%;
+height: auto;
+}
+/* AI Chatbox */
+.ai-chatbox {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.chat-log {
+    background: #fff;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#userInput {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#sendMessageBtn {
+    background-color: #145A32;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendMessageBtn:hover {
+    background-color: #27ae60;
+}

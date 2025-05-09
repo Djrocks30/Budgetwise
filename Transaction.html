@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transactions - Budgetwise</title>
+  <link rel="stylesheet" href="transaction.css" />
+</head>
+<body>
+  <header>
+    <h1>Budgetwise Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="Dashboard.html" id="dashboard-link">Home</a></li>
+        <li><a href="login.html" id="login-link">Login</a></li>
+        <li><a href="Transaction.html" id="transaction-link" class="active">Transaction</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Income Form -->
+    <section class="transaction-form income-form">
+      <h2>💰 Add Income</h2>
+      <form id="incomeForm">
+        <label for="incomeCategory">Source:</label>
+        <select id="incomeCategory" required>
+          <option value="Salary">Salary</option>
+          <option value="Freelance">Freelance</option>
+          <option value="Investment">Investment</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="number" id="incomeAmount" placeholder="Amount" required />
+        <input type="date" id="incomeDate" required />
+        <button type="submit" class="income-button">Add Income</button>
+      </form>
+    </section>
+
+    <!-- Expense Form -->
+    <section class="transaction-form expense-form">
+      <h2>💸 Add Expense</h2>
+      <form id="expenseForm">
+        <label for="expenseCategory">Category:</label>
+        <select id="expenseCategory" required>
+          <option value="Rent">Rent</option>
+          <option value="Groceries">Groceries</option>
+          <option value="Transport">Transport</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="number" id="expenseAmount" placeholder="Amount" required />
+        <input type="date" id="expenseDate" required />
+        <button type="submit" class="expense-button">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Bill Form -->
+    <section class="transaction-form bill-form">
+      <h2>🔔 Add Bill Reminder</h2>
+      <form id="billForm">
+        <input type="text" id="billName" placeholder="Bill Name" required />
+        <input type="number" id="billAmount" placeholder="Amount" required />
+        <input type="date" id="billDate" required />
+        <label>
+                <input type="checkbox" id="repeatBill" />
+                Repeat Monthly
+              </label>
+        <button type="submit" class="bill-button">Add Bill</button>
+      </form>
+    </section>
+
+    <!-- Transaction Summary -->
+    <section class="transaction-summary">
+      <h2>📊 Transaction Summary</h2>
+      <div id="transactionList"></div>
+    </section>
+
+    <!-- Bill Summary -->
+    <section class="bill-summary">
+      <h2>📅 Bill Schedule</h2>
+      <div id="billList"></div>
+      <button id="clearBillsBtn" class="clear-bills-button">Clear Bills</button>
+    </section>
+  </main>
+  <script src="transaction.js"></script>
+</body>
+</html>

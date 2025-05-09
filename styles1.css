@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 80px;
+}
+
+/* Header Styling */
+header {
+    background-color: #145A32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #0E4D2C;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 15px;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #A9DFBF;
+    color: #145A32;
+}
+
+nav ul li a.active {
+    background-color: #1e8449;
+    color: white;
+}
+
+/* Main Container */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Budget Summary Section */
+.balance-summary {
+    background-color: #e9f7ef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.balance-summary h2 {
+    color: #145A32;
+    margin-bottom: 10px;
+}
+
+.balance-summary p {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    margin: 6px 0;
+}
+
+/* Expense & Trends Chart Sections */
+.expense-breakdown,
+.spending-trends {
+    margin-top: 30px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Chart Containers */
+.chart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Weekly Breakdown */
+.spending-trends h2 {
+    color: #145A32;
+    margin-bottom: 10px;
+}
+
+/* Bills */
+.calendar-view {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+#clearBills {
+    margin-top: 10px;
+    background-color: #c0392b;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#clearBills:hover {
+    background-color: #e74c3c;
+}
+
+/* AI Report */
+.ai-report {
+    background-color: #fffde7;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.ai-report h2 {
+    color: #b7950b;
+}
+
+#generateAIReport {
+    background-color: #145A32;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generateAIReport:hover {
+    background-color: #27ae60;
+}
+
+#aiReportOutput {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.ai-chatbox {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.ai-chatbox h2 {
+    color: #145A32;
+    margin-bottom: 10px;
+}
+
+.chat-log {
+    background: white;
+    border: 1px solid #ccc;
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.chat-log p {
+    margin: 5px 0;
+}
+
+/* Flexbox for input and button */
+.chat-input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#userInput {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.05rem;
+    box-sizing: border-box;
+    min-height: 80px; /* More height for multiline */
+    resize: none; /* Allow vertical resizing if needed */
+}
+
+
+#sendMessageBtn {
+    background-color: #145A32;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendMessageBtn:hover {
+    background-color: #27ae60;
+}

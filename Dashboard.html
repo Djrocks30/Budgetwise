@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Budgetwise Dashboard</title>
+    <link href="styles1.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Budgetwise</h1>
+        <nav>
+            <ul>
+                <li><a href="Dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="Transaction.html">Transaction</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="balance-summary">
+            <h2>💼 Budget Overview</h2>
+            <p>Total Income: $<span id="dashboardTotalIncome">0</span></p>
+            <p>Total Expenses: $<span id="dashboardTotalExpenses">0</span></p>
+            <p>Remaining Balance: $<span id="dashboardRemainingBalance">0</span></p>
+        </section>
+
+        <section class="expense-breakdown">
+            <h2>📊 Monthly Expense Breakdown</h2>
+            <canvas id="expenseChart"></canvas>
+        </section>
+
+        <section class="spending-trends">
+            <h2>📈 Weekly Spending Trends</h2>
+            <canvas id="trendChart"></canvas>
+        </section>
+
+        <section class="calendar-view">
+            <h2>📅 Upcoming Bills</h2>
+            <div id="upcomingBills" class="calendar"></div>
+            <button id="clearBills">Clear All Bills</button>
+        </section>
+        <section class="ai-report">
+            <h2>📝 AI Budget Report</h2>
+            <button id="generateAIReport">Generate AI Report</button>
+            <div id="aiReportOutput"></div>
+        </section>
+        <section class="ai-chatbox">
+            <h2>💬 Budgeting Assistant</h2>
+            <div id="chatLog" class="chat-log"></div>
+            <div class="chat-input-container">
+<textarea id="userInput" placeholder="Hey, I'm your budget assistant. Let's run this bag together"></textarea>
+            <button id="sendMessageBtn">Send</button>
+          </div>        
+         </section>
+    
+    </main>
+</body>
+</html>
